@@ -61,3 +61,96 @@ ul {
     flex: 1;
     margin-left: 20px;
 }
+
+/*SHOWCASE*/
+hr{
+    margin: 10px 0;
+}
+
+.showcase{
+    margin: auto;
+    margin-top: 20px;
+    width: 70%;
+    height: 650px;
+    background: url(./img/Ambulance.jpg) no-repeat top center/cover;
+    display:flex;
+    flex-direction: column;
+    text-align:center; 
+    justify-content:flex-end;
+    color: white;
+    margin-bottom: 20px;
+   /*align-items: center;*/
+} 
+
+/*.btn{
+    cursor: pointer;
+    display:inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: white;
+    font-size: 15px;
+    border: 1px solid;
+}*/
+
+/*.btn:hover{
+    color: yellowgreen;
+}*/
+
+header h2{
+    text-align-last: center;
+    font-size: 50px;
+}
+
+.showcase h2, .shocase p{
+    margin-bottom:10px;
+} 
+
+.showcase h2 {
+    text-transform: uppercase;
+    color: yellowgreen;
+    font-size: 40px;
+    background: tomato;
+}
+
+.showcase p {
+    font-size: 30px;
+}
+/*SERVICIOS*/
+
+.servicios {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    margin: 30px 0px;
+}
+
+.servicios img{
+    width: 180px;
+    height: 180px;
+}
+
+.servicios h3{
+    font-size: 20px;
+    margin: 10px 0;
+    
+}
+
+.servicios img{
+    -webkit-transition: -webkit-transform 0.3 ease-in-out 0.1%;
+    -ms-transition: -ms-transform 0.3 ease-in-out 0.1%;
+    -o-transition: -o-transform 0.3 ease-in-out 0.1%;
+    -moz-transition: -moz-transform 0.3 ease-in-out 0.1%;
+}
+
+.servicios img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+}
+
+.servicios a:hover{
+    color: yellowgreen;
+}
