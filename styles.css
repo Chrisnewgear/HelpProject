@@ -133,9 +133,9 @@ header h2{
 
 .showcase h2 {
     text-transform: uppercase;
-    color: yellowgreen;
+    color: white;
     font-size: 40px;
-    background: tomato;
+    background: yellowgreen;
 }
 
 .showcase p {
@@ -148,7 +148,7 @@ header h2{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 25px;
-    margin: 30px 0px;
+    margin: 30px 30px;
 }
 
 .servicios img{
