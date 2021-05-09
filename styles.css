@@ -5,8 +5,6 @@
 }
 
 body{
-    /*background-color: #DFDBE5;*/
-    /*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%230b9052' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");*/
     font-size: 16px;
     font-family: 'Oswald', sans-serif;
 }
@@ -19,6 +17,12 @@ ul {
     list-style: none;
 }
 
+h1{
+    background-color: yellowgreen;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
 /*SLIDER*/
 .slider{
     display: block;
@@ -109,40 +113,18 @@ hr{
 
 .showcase{
     margin: auto;
-    /*margin-top: 20px;
-    width: 100%;
-    height: 790px;
-    background: url(./img/Ambulance.jpg) no-repeat top center/cover;*/
     display:flex;
     flex-direction: column;
     text-align:center; 
     justify-content:flex-end;
     color: white;
     margin-bottom: 20px;
-   /*align-items: center;*/
 } 
-
-
-/*.btn{
-    cursor: pointer;
-    display:inline-block;
-    border: 0;
-    font-weight: bold;
-    padding: 10px 20px;
-    background: #262626;
-    color: white;
-    font-size: 15px;
-    border: 1px solid;
-}*/
-
-/*.btn:hover{
-    color: yellowgreen;
-}*/
 
 header h2{
     text-align-last: center;
-    font-size: 50px;
-    text-transform: ;
+    font-size: 40px;
+    text-transform:uppercase ;
 }
 
 .showcase h2, .showcase p{
@@ -208,14 +190,101 @@ header h2{
 
 /*COBERTURA*/
 
-.container{
+.container2{
     margin: auto;
-    width: 800px;
-    padding: 30px;
+    width: 1080px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-ul .slider{
+ul.slider{
     position: relative;
-    width: 800px;
-    height: 300px;
+    width: 1080px;
+    height: 700px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: white;
+    transition: opacity .5s;
+}
+
+ul.slider li img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+ul.slider li:first-child{
+    opacity:1; 
+}
+
+ul.slider li:target{
+    opacity: 1;
+}
+
+/*BOTONES SLIDE*/
+.btn li a{
+    margin: 10px 80px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid gray;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    background-color: yellowgreen;
+}
+
+.btn{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    margin: 10px 0px;
+}
+
+.servicios li{
+    display:block;
+    width: 180px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.servicios a {
+    display: block;
+    font-size: 20px;
+    margin: 10px 0px;
+    text-align-last: center;
+}
+#servicios {
+    background-color: yellowgreen;
+    width: 20%;
+    border-radius: 25px;
+    margin: auto;
+}
+
+#cobertura{
+    background-color: yellowgreen;
+    width: 20%;
+    border-radius: 25px;
+    margin: auto;
+}
+
+#costos {
+    background-color: yellowgreen;
+    width: 20%;
+    border-radius: 25px;
+    margin: auto;
+}
+/*TARIFARIO*/
+.tarifario img{
+    width: 100%;
+    height: 100%;
+    justify-items: center;
 }
