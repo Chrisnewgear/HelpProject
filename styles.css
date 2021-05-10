@@ -9,7 +9,7 @@
     --obscuro: #212121;
     --primario:#ffc107;
     --secundario:#0097A7;
-    --gris:#757575;
+    --gris:yellowgreen;
     --grisclaro:#DFE9F3;
 }
 
@@ -31,7 +31,7 @@ ul {
 
 h1{
     background-color: yellowgreen;
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
     color:#262626;
 }
@@ -39,7 +39,7 @@ h1{
 .slider{
     display: block;
     width: 100%;
-    height: 720px;
+    height: 715px;
     overflow: hidden;
     align-items: center;
 }
@@ -102,6 +102,7 @@ h1{
 .nav-main ul li a{
     padding: 2px;
     font-size: 30px;
+    
 }
 
 
@@ -113,6 +114,7 @@ h1{
 .nav-main ul li a:hover{
     border-bottom: 2px solid black;
     color: yellowgreen;
+    
 }
 
 .nav-main ul.nav-menu {
@@ -133,12 +135,13 @@ hr{
     justify-content:flex-end;
     color: white;
     margin-bottom: 20px;
+    
 } 
 
 header h2{
     text-align-last: center;
     font-size: 40px;
-    text-transform:uppercase ;
+    /*text-transform:uppercase;*/
 }
 
 .showcase h2, .showcase p{
@@ -146,7 +149,7 @@ header h2{
 } 
 
 .showcase h2 {
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     color:#262626;
     font-size: 40px;
     background: yellowgreen;
@@ -171,6 +174,8 @@ header h2{
     height: 180px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 5px 5px 10px;
+    border-radius: 10px;
 }
 
 .servicios h3{
@@ -184,18 +189,16 @@ header h2{
     display: block;
     text-align: justify;
 }
-.servicios img{
-    -webkit-transition: -webkit-transform 0.3 ease-in-out 0.1%;
-    -ms-transition: -ms-transform 0.3 ease-in-out 0.1%;
-    -o-transition: -o-transform 0.3 ease-in-out 0.1%;
-    -moz-transition: -moz-transform 0.3 ease-in-out 0.1%;
-}
+
 
 .servicios img:hover {
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+    
+}
+
+.servicios img{
+    transition: -webkit-transform 0.3 ease-in-out 0.1%;
+    
 }
 
 .servicios a:hover{
@@ -253,6 +256,13 @@ ul.slider li:target{
     text-align: center;
     padding-top: 15px;
     background-color: yellowgreen;
+    font-size: 25px;
+    box-shadow: 5px 5px 10px;
+}
+
+.btn li a:hover{
+    transition: transform 0.3 ease-in-out 0.1%;
+    transform: scale(1.2);
 }
 
 .btn{
@@ -281,6 +291,7 @@ ul.slider li:target{
     width: 20%;
     border-radius: 25px;
     margin: auto;
+    box-shadow: 0px 0px 10px;
 }
 
 #cobertura{
@@ -288,6 +299,7 @@ ul.slider li:target{
     width: 20%;
     border-radius: 25px;
     margin: auto;
+    box-shadow: 0px 0px 10px;
 }
 
 #costos {
@@ -296,6 +308,7 @@ ul.slider li:target{
     border-radius: 25px;
     margin: auto;
     margin-bottom: 20px;
+    box-shadow: 0px 0px 10px;
 }
 
 #contacto {
@@ -305,7 +318,7 @@ ul.slider li:target{
     margin: auto;
     margin-bottom: 20px;
     margin-top: 20px;
-
+    box-shadow: 0px 0px 10px;
 }
 
 /*TARIFARIO*/
@@ -322,6 +335,7 @@ ul.slider li:target{
     margin: 0 auto;
     padding: 2rem;
     border-radius: 10px;
+    box-shadow: 0px 0px 10px;
 }
 
 .formulario fieldset{
@@ -334,7 +348,7 @@ ul.slider li:target{
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 2rem;
-    color: var(--primario);
+    color: var(--obscuro);
 }
 
 .campo {
@@ -342,7 +356,7 @@ ul.slider li:target{
 }
 
 .campo label{
-    color: var(--blanco);
+    color: var(--obscuro);
     font-weight: bold;
     margin-bottom: 0.5rem;
     display: block;
