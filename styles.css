@@ -725,20 +725,20 @@ div.tit-form{
     height: 1px;
     background: #C5C5C5;
     margin: 10PX 0PX 15px;
+    
 }
 
-.mensaje-modal P{
-    font-size: 16PX;
-    color: #606060;
-    text-align: left;
+.mensaje-modal h4{
+    font-size: 18px;
+    color: #606060; 
 }
 
-.mensaje-modal p::before{
+.mensaje-modal h4::before{
+    content: "\f00d";
     font-family: FontAwesome;
     display: inline-block;
     color: tomato;
-    margin-right:8px;
-    content: "\f00d";
+    margin-right:8px; 
 }
 
 .mensaje-modal #btn-close{
