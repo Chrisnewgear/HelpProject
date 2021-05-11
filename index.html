@@ -13,33 +13,14 @@
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="img/Help_logo - Copy.ico">
-    <style>
-        .whatsapp {
-            position:fixed;
-            width:60px;
-            height:60px;
-            bottom:40px;
-            right:40px;
-            background-color:#25d366;
-            color:#FFF;
-            border-radius:50px;
-            text-align:center;
-            font-size:30px;
-            z-index:100;
-        }
-  
-        .whatsapp-icon {
-            margin-top:13px;
-        }
-    </style>
+    <link rel="icon" href="img/Help_logo - Copy.ico"> 
 </head>
 <body>
+    <h1 class="headline">Yomecuidochile.cl</h1>
+    <a href="https://wa.me/+56957187254?text=Hola,%20me%20gustaría%20más%20información%20por%20favor" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
     <div class="menu-btn">
         <i class="fas fa-bars"></i>
     </div>
-    <a href="https://wa.me/+56957187254?text=Hola,%20me%20gustaría%20más%20información%20por%20favor" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
-    <h1>Yomecuidochile.cl</h1>
     <div class="container">
         <nav class="nav-main">
             <img src="img/Help_logo.png" alt="Help logo" class="nav-brand">
@@ -57,12 +38,12 @@
                     <a href="#contacto">Contacto</a>
                 </li>
             </ul>
-            <ul class="">
-                <li>
-                    <a href=""></a>
-                    <!--<i class="fas fa-search"></i>-->
-                </li>
-            </ul>
+            <!--<ul class="nav-menu-right">
+                    <li>
+                        <a href="#"></a>
+                        <i class="fas fa-search"></i>
+                    </li>
+                </ul>-->
         </nav>
         <hr>
         <!--SHOWCASE-->
@@ -86,11 +67,12 @@
             </div>
             <h2>Las necesidades de atención médica pueden ocurrir en cualquier momento o lugar</h2>
             <p>La atención de salud oportuna es clave.  No recibirla disminuye sus posibilidades de vida en un 50%</p>
+            <p id="texto">El costo de atención de Urgencia en una clínica puede ser muy elevado. <br> Minimice costos, su presupuesto es importante. <br> Obtenga 4 servicios médicos por un precio accesible en estos tiempos de crisis.</p>
             
         </header>
         <!--SERVICIOS-->
         <header>
-            <h2 id="servicios">Servicios</h2>
+            <h2 id="servicios" class="tit-servicios">Servicios</h2>
         </header>
         <div class="servicios">
             
@@ -129,7 +111,7 @@
             </div>
         </div>
             <header>
-                <h2 id="cobertura">Cobertura</h2>
+                <h2 id="cobertura" class="tit-cobertura">Cobertura</h2>
             </header>
             <div class="container2">
                 <ul class="slider">
@@ -155,20 +137,27 @@
                 </ul>
             </div>
         <header>
-            <h2 id="costos">Tarifario</h2>
+            <h2 id="costos" class="tit-tarifario">Tarifario</h2>
             <div class="tarifario">
                 <img src="img/tarifario.jpg" alt="Tarifario" title="Tarifario">
             </div>
             
         </header>
         <header>
-            <h2 id="contacto">Contacto</h2>
+            <h2 id="contacto" class="tit-contacto">Contacto</h2>
         </header>
         <section>
             <form class="formulario">
                 <fieldset>
-                    <legend>Teléfono de contacto: +56957187254</legend>
-                    <legend>e-mail: a.lescano@help.cl</legend>
+                    <div class="info-contacto">
+                        <h2>Información de contacto</h3>
+                        <h3>Teléfono de contacto: +56957187254</h4>
+                        <h3>e-mail: a.lescano@help.cl</h4>
+                    </div>
+                    <div class="tit-form">
+                        <h2>Por favor llena tus datos</h2>
+                    </div>
+                    
                     <div class="contenedor-campos">    
                         <div class="campo">
                             <label>Nombre</label>
@@ -200,7 +189,10 @@
 
     </div>
     <footer class="footer">
-        <p>Todos los derechos reservados. MONKEY CITY STUDIOS</p>
+        <p>Todos los derechos reservados 2021. Desarrollado por MONKEY CITY STUDIOS</p>
     </footer>
+    <!--SCROLL REVEAL-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
 </body>
 </html>
