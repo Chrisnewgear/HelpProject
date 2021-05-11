@@ -14,8 +14,21 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="img/Help_logo - Copy.ico"> 
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="formscript.js"></script>
 </head>
 <body>
+    <div class="modal-wrap">
+        <div class="mensaje-modal">
+            <h3>Por favor llenas todos los campos</h3>
+            <p>Ingrese el nombre</p>
+            <p>Ingresa tu teléfono</p>
+            <p>Ingresa tu e-mail</p>
+            <p>Ingresa un mensaje</p>
+            <span id="btn-close">Cerrar</span>
+        </div>
+    </div>
+
     <h1 class="headline">Yomecuidochile.cl</h1>
     <a href="https://wa.me/+56957187254?text=Hola,%20me%20gustaría%20más%20información%20por%20favor" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
     <div class="menu-btn">
@@ -150,9 +163,9 @@
             <form class="formulario">
                 <fieldset>
                     <div class="info-contacto">
-                        <h2>Información de contacto</h3>
-                        <h3>Teléfono de contacto: +56957187254</h4>
-                        <h3>e-mail: a.lescano@help.cl</h4>
+                        <h2>Información de contacto</h3>    
+                        <p><a href="tel:+56957187254" class="fa fa-mobile"> +56957187254</a></p>
+                        <p><a href="mailto:a.lescano@help.cl" class="fa fa-envelope"> a.lescano@help.cl</a></p>    
                     </div>
                     <div class="tit-form">
                         <h2>Por favor llena tus datos</h2>
@@ -161,22 +174,22 @@
                     <div class="contenedor-campos">    
                         <div class="campo">
                             <label>Nombre</label>
-                            <input class="input-text" type="text" placeholder="Nombre">
+                            <input class="input-text" type="text" placeholder="Nombre" id="name">
                         </div>
 
                         <div class="campo">
                             <label>Teléfono</label>
-                            <input class="input-text" type="tel" placeholder="Ingresa tu teléfono">
+                            <input class="input-text" type="tel" placeholder="Ingresa tu teléfono" id="telefono">
                         </div>
 
                         <div class="campo">
                             <label>Email</label>
-                            <input class="input-text" type="email" placeholder="e-mail">
+                            <input class="input-text" type="email" placeholder="e-mail" id="mail">
                         </div>
 
                         <div class="campo">
                             <label>Mensaje</label>
-                            <textarea class="input-text" placeholder="Escríbenos"></textarea>
+                            <textarea class="input-text" placeholder="Escríbenos" id="mensaje"></textarea>
                         </div>
                     </div><!--contenedor de los campos-->
                         <div>
@@ -194,5 +207,6 @@
     <!--SCROLL REVEAL-->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
+    
 </body>
 </html>
