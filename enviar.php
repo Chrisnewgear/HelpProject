@@ -1,16 +1,16 @@
 <?php
-    //LLAMANDO A LOSCAMPOS
+    //LLAMANDO A LOS CAMPOS
     $nombre=$_POST['nombre'];
-    $nombre=$_POST['telefono'];
-    $nombre=$_POST['mail'];
-    $nombre=$_POST['mensaje'];
+    $telefono=$_POST['telefono'];
+    $correo=$_POST['correo'];
+    $mensaje=$_POST['mensaje'];
 
     //DATOS PARA EL CORREO
-    $destinatario = "a.lescano@help.cl";
+    $destinatario = "christianabrahmsanchez@gmail.com";
     $asunto = "Contacto desde la web";
 
     $carta = "De: $nombre \n";
-    $carta .= "Correo: $mail \n";
+    $carta .= "Correo: $correo \n";
     $carta .= "Teléfono: $telefono \n";
     $carta .= "Mensaje: $mensaje";
 
