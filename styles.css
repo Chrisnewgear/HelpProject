@@ -235,7 +235,7 @@ header h2{
 
 .showcase p#texto{
     transition: transform .5s ease-in-out;
-    
+    color: white;
 }    
 /*SERVICIOS*/
 
