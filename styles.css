@@ -502,8 +502,12 @@ div.tit-form{
     cursor:pointer;
     background-color: tomato;
     color:white;
-    transition: transform .2s ease-in-out;
+    
     transform: scale(1.03);
+}
+
+.boton{
+    transition: transform .2s ease-in-out;
 }
 
 .campo textarea{
