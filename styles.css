@@ -229,8 +229,13 @@ header h2{
 }
 
 .showcase p#texto:hover{
-    transition: transform .5s ease-in-out;
+    
     transform: scale(1.1);
+}    
+
+.showcase p#texto{
+    transition: transform .5s ease-in-out;
+    
 }    
 /*SERVICIOS*/
 
@@ -336,8 +341,13 @@ ul.slider li:target{
 }
 
 .btn li a:hover{
-    transition: transform .5s ease-in-out;
+    
     transform: scale(1.2);
+}
+
+.btn li a{
+    transition: transform .5s ease-in-out;
+    
 }
 
 .btn{
