@@ -685,7 +685,16 @@ div.tit-form{
     justify-content:space-evenly;
 }
 
-
+@media(max-width:480px){
+    .btn{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin: 10px 0px;
+        padding-left: 3px;
+        justify-content:space-evenly;
+    }
+    
    
 @media(max-width:700px){
     .boton {
