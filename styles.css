@@ -224,10 +224,11 @@ header h2{
     padding-top: 10px;
     padding-bottom: 10px;
     cursor:pointer;
+    transition: transform .5s ease-in-out;
 }
 
 .showcase p#texto:hover{
-    transition: transform .5s ease-in-out;
+    
     transform: scale(1.1);
 }    
 /*SERVICIOS*/
@@ -331,10 +332,11 @@ ul.slider li:target{
     background-color: yellowgreen;
     font-size: 25px;
     box-shadow: 5px 5px 10px;
+    transition: transform .5s ease-in-out;
 }
 
 .btn li a:hover{
-    transition: transform .5s ease-in-out;
+    
     transform: scale(1.2);
 }
 
@@ -484,13 +486,13 @@ div.tit-form{
     text-align: center;
     border: none;
     box-shadow: 5px 5px 10px #262626;
+    transition: transform .2s ease-in-out;
 }
 
 .boton:hover{
     cursor:pointer;
     background-color: tomato;
     color:white;
-    transition: transform .2s ease-in-out;
     transform: scale(1.03);
 }
 
