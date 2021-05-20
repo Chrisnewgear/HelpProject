@@ -1,3 +1,4 @@
+
 <?php
     //LLAMANDO A LOS CAMPOS
     $nombre=$_POST['nombre'];

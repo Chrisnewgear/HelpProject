@@ -205,12 +205,12 @@ header h2{
 .showcase h2 {
     /*text-transform: uppercase;*/
     color:#262626;
-    font-size: 30px;
+    font-size: 40px;
     background: yellowgreen;
 }
 
 .showcase p {
-    font-size: 0px;
+    font-size: 30px;
     color: #262626;
 }
 .showcase p#texto {
@@ -223,19 +223,12 @@ header h2{
     box-shadow: 0px 0px 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
     cursor:pointer;
 }
 
 .showcase p#texto:hover{
-    
-    transform: scale(1.1);
-}    
-
-.showcase p#texto{
     transition: transform .5s ease-in-out;
-    color: white;
+    transform: scale(1.1);
 }    
 /*SERVICIOS*/
 
@@ -341,13 +334,8 @@ ul.slider li:target{
 }
 
 .btn li a:hover{
-    
-    transform: scale(1.2);
-}
-
-.btn li a{
     transition: transform .5s ease-in-out;
-    
+    transform: scale(1.2);
 }
 
 .btn{
@@ -417,9 +405,9 @@ ul.slider li:target{
 /*Contacto*/
 .formulario{
     background-color: var(--gris);
-    width: min(60rem, 80%);/*utiliza el valor mas pequeño para el width*/
+    width: min(60rem, 100%);/*utiliza el valor mas pequeño para el width*/
     margin: 0 auto;
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 10px;
     box-shadow: 0px 0px 10px;
     margin-bottom: 20px;
@@ -502,12 +490,8 @@ div.tit-form{
     cursor:pointer;
     background-color: tomato;
     color:white;
-    
-    transform: scale(1.03);
-}
-
-.boton{
     transition: transform .2s ease-in-out;
+    transform: scale(1.03);
 }
 
 .campo textarea{
@@ -690,13 +674,14 @@ div.tit-form{
 }
 
 @media(max-width:700px){
-.btn{
-    display:grid;
-    grid-template-columns: 1fr;
-    gap: 25px;
-    margin: 10px 0px;
-    padding-left: 57px;
-    justify-content:space-evenly;
+    .btn{
+        display:grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin: 10px 0px;
+        padding-left: 57px;
+        justify-content:space-evenly;
+    }
 }
 
 @media(max-width:480px){
@@ -708,7 +693,7 @@ div.tit-form{
         padding-left: 3px;
         justify-content:space-evenly;
     }
-    
+}    
    
 @media(max-width:700px){
     .boton {
@@ -775,23 +760,8 @@ div.tit-form{
         padding-bottom: 10px;
         padding-left: 15px;
         padding-right: 15px;
-        cursor:pointer;
-}
-
-@media(max-width:1024px){
-    .showcase p#texto {
-        font-size: 20px;
-        color: #262626;
-        background-color: tomato;
-        width: 70%;
-        margin: auto;
-        border-radius: 25px;
-        box-shadow: 0px 0px 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 15px;
-        padding-right: 15px;
-        cursor:pointer;
+        cursor:pointer;    
+    }
 }
 /*@media(max-width:1024px){
     .servicios, ul.slider, #costos, .tarifario, .formulario, .servicios img, .container2{
@@ -799,7 +769,6 @@ div.tit-form{
         scroll-snap-stop: always;
     }
 }
-
 @media(max-width:700px){
     .servicios, ul.slider, #costos, .tarifario, .formulario, .servicios img, .container2{
         scroll-snap-align: center;  
