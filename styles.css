@@ -215,8 +215,8 @@ header h2{
 }
 .showcase p#texto {
     font-size: 20px;
-    color: #262626;
-    background-color: tomato;
+    color: white;
+    background-color: var(--secundario);
     width: 50%;
     margin: auto;
     border-radius: 25px;
@@ -475,14 +475,14 @@ div.tit-form{
 .boton {
     background-color: var(--secundario);
     color: var(--blanco);
-    padding: 1rem 3rem;
+    padding: 1rem 9rem;
     margin-top: 3rem;
     font-size: 2rem;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
     border-radius: .5rem;
-    width: 90%;
+    width: 100%;
     text-align: center;
     border: none;
     box-shadow: 5px 5px 10px #262626;
@@ -500,14 +500,7 @@ div.tit-form{
     height: 200px;
     resize: none;
 }
-@media (min-width: 768px){
-    .contenedor-campos{
-    display:grid;
-    grid-template-rows: auto auto 20rem;
-    grid-template-columns: 50% 50%;
-    column-gap: 1rem;
-    }
-}
+
 .campo:nth-child(2){
     width: 95%;
 }
@@ -522,6 +515,25 @@ div.tit-form{
 
 
 /*RESPONSIVE*/
+@media(min-width: 1024){
+    #telefono{
+        width: 100%;
+        border: none;
+        padding: 1rem;
+        border-radius: .5rem;
+    }
+}
+
+
+@media (min-width: 1024px){
+    .contenedor-campos{
+    display:grid;
+    grid-template-rows: auto auto ;
+    grid-template-columns: 50% 50%;
+    column-gap: 1rem;
+    }
+}
+
 @media(max-width:700px){
     .menu-btn{
         display: block;
@@ -675,6 +687,7 @@ div.tit-form{
     }
 }
 
+
 @media(max-width:700px){
     .btn{
         display:grid;
@@ -696,12 +709,67 @@ div.tit-form{
         justify-content:space-evenly;
     }
 }    
-   
+
+@media(min-width:200px){
+    .boton {
+        background-color: var(--secundario);
+        color: var(--blanco);
+        padding: auto auto;
+        margin-top: 3rem;
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: .5rem;
+        width: 70%;
+        text-align: center;
+        border: none;
+        box-shadow: 5px 5px 10px #262626;
+    }
+}
+
+@media(max-width:1024px){
+    .boton {
+        background-color: var(--secundario);
+        color: var(--blanco);
+        padding: 1rem 4rem;
+        margin-top: 3rem;
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: .5rem;
+        width: 100%;
+        text-align: center;
+        border: none;
+        box-shadow: 5px 5px 10px #262626;
+    }
+}  
+
+
 @media(max-width:700px){
     .boton {
         background-color: var(--secundario);
         color: var(--blanco);
-        padding: 1rem 3rem;
+        padding: 1rem 4rem;
+        margin-top: 3rem;
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: .5rem;
+        width: 80%;
+        text-align: center;
+        border: none;
+        box-shadow: 5px 5px 10px #262626;
+    }
+}
+
+@media(max-width:320px){
+    .boton {
+        background-color: var(--secundario);
+        color: var(--blanco);
+        padding: auto auto;
         margin-top: 3rem;
         font-size: 2rem;
         text-decoration: none;
@@ -715,6 +783,60 @@ div.tit-form{
     }
 }  
 
+@media(min-width:368px){
+    .boton {
+        background-color: var(--secundario);
+        color: var(--blanco);
+        padding: auto auto;
+        margin-top: 3rem;
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: .5rem;
+        width: 80%;
+        text-align: center;
+        border: none;
+        box-shadow: 5px 5px 10px #262626;
+    }
+}  
+
+
+@media(min-width:200px){
+    .boton {
+        background-color: var(--secundario);
+        color: var(--blanco);
+        padding: auto auto;
+        margin-top: 3rem;
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: .5rem;
+        width: 70%;
+        text-align: center;
+        border: none;
+        box-shadow: 5px 5px 10px #262626;
+    }
+}
+
+@media(max-width:480px){
+    .boton {
+        background-color: var(--secundario);
+        color: var(--blanco);
+        padding: 1rem 4rem;
+        margin-top: 3rem;
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: .5rem;
+        width: 60%;
+        text-align: center;
+        border: none;
+        box-shadow: 5px 5px 10px #262626;
+    }
+} 
 @media(max-width:1024px){
     .tarifario img{
         box-sizing:border-box;
@@ -752,8 +874,8 @@ div.tit-form{
 @media(max-width:700px){
     .showcase p#texto {
         font-size: 20px;
-        color: #262626;
-        background-color: tomato;
+        color: white;
+        background-color: var(--secundario);
         width: 70%;
         margin: auto;
         border-radius: 25px;
@@ -763,6 +885,42 @@ div.tit-form{
         padding-left: 15px;
         padding-right: 15px;
         cursor:pointer;    
+    }
+}
+@media(max-width:320px){
+    .formulario{
+        background-color: var(--gris);
+        width: 80%;
+        margin: 0 auto;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:1024px){
+    .formulario{
+        background-color: var(--gris);
+        width: 80%;
+        margin: 0 auto;
+        padding-left: 1.5rem;
+        padding-right: 2.5rem;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:700px){
+    .formulario{
+        background-color: var(--gris);
+        width: 80%;
+        margin: 0 auto;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px;
+        margin-bottom: 20px;
     }
 }
 /*@media(max-width:1024px){
