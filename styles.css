@@ -221,7 +221,7 @@ header h2{
     width: 50%;
     margin: auto;
     border-radius: 25px;
-    box-shadow: 0px 0px 10px;
+    box-shadow: 2px 2px 5px #262626;
     padding-top: 10px;
     padding-bottom: 10px;
     cursor:pointer;
@@ -229,7 +229,6 @@ header h2{
 }
 
 .showcase p#texto:hover{
-    
     transform: scale(1.1);
 }    
 /*SERVICIOS*/
@@ -711,23 +710,7 @@ div.tit-form{
     }
 }    
 
-@media(min-width:200px){
-    .boton {
-        background-color: var(--secundario);
-        color: var(--blanco);
-        padding: auto auto;
-        margin-top: 3rem;
-        font-size: 2rem;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: bold;
-        border-radius: .5rem;
-        width: 70%;
-        text-align: center;
-        border: none;
-        box-shadow: 5px 5px 10px #262626;
-    }
-}
+/*BOTON ENVIAR*/
 
 @media(max-width:1024px){
     .boton {
@@ -747,8 +730,7 @@ div.tit-form{
     }
 }  
 
-
-@media(max-width:700px){
+@media(max-width:812px){
     .boton {
         background-color: var(--secundario);
         color: var(--blanco);
@@ -759,67 +741,52 @@ div.tit-form{
         text-transform: uppercase;
         font-weight: bold;
         border-radius: .5rem;
-        width: 80%;
+        width: 60%;
+        text-align: center;
+        border: none;
+        box-shadow: 5px 5px 10px #262626;
+    }
+} 
+
+@media(max-width:731px){
+    .boton {
+        background-color: var(--secundario);
+        color: var(--blanco);
+        padding: 1rem 4rem;
+        margin-top: 3rem;
+        
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: .5rem;
+        width: 60%;
         text-align: center;
         border: none;
         box-shadow: 5px 5px 10px #262626;
     }
 }
 
-@media(max-width:320px){
+@media(max-width:640px){
     .boton {
         background-color: var(--secundario);
         color: var(--blanco);
-        padding: auto auto;
+        padding: 1rem 4rem;
         margin-top: 3rem;
+        margin-left: 2rem;
         font-size: 2rem;
         text-decoration: none;
         text-transform: uppercase;
         font-weight: bold;
         border-radius: .5rem;
-        width: 80%;
-        text-align: center;
-        border: none;
-        box-shadow: 5px 5px 10px #262626;
-    }
-}  
-
-@media(min-width:368px){
-    .boton {
-        background-color: var(--secundario);
-        color: var(--blanco);
-        padding: auto auto;
-        margin-top: 3rem;
-        font-size: 2rem;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: bold;
-        border-radius: .5rem;
-        width: 80%;
-        text-align: center;
-        border: none;
-        box-shadow: 5px 5px 10px #262626;
-    }
-}  
-
-
-@media(min-width:200px){
-    .boton {
-        background-color: var(--secundario);
-        color: var(--blanco);
-        padding: auto auto;
-        margin-top: 3rem;
-        font-size: 2rem;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: bold;
-        border-radius: .5rem;
-        width: 70%;
+        width: 60%;
         text-align: center;
         border: none;
         box-shadow: 5px 5px 10px #262626;
     }
 }
+
+
 
 @media(max-width:480px){
     .boton {
@@ -838,6 +805,139 @@ div.tit-form{
         box-shadow: 5px 5px 10px #262626;
     }
 } 
+@media(min-width:320px){
+    .boton {
+        background-color: var(--secundario);
+        color: var(--blanco);
+        padding: auto auto;
+        margin-top: 3rem;
+        margin-left: ;   
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: .5rem;
+        width: 40%;
+        text-align: center;
+        border: none;
+        box-shadow: 5px 5px 10px #262626;
+    }
+} 
+
+@media(min-width:1024px){
+    .boton {
+        background-color: var(--secundario);
+        color: var(--blanco);
+        padding-left: 1rem 4rem;
+        margin-top: 3rem;
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: .5rem;
+        width: 100%;
+        text-align: center;
+        border: none;
+        box-shadow: 5px 5px 10px #262626;
+    }
+} 
+
+
+@media(min-width:768px){
+    .boton {
+        background-color: var(--secundario);
+        color: var(--blanco);
+        padding: 1rem 4rem;
+        margin-top: 3rem;
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: .5rem;
+        width: 80%;
+        text-align: center;
+        border: none;
+        box-shadow: 5px 5px 10px #262626;
+    }
+} 
+ 
+
+
+@media(min-width:950px){
+    .boton {
+        background-color: var(--secundario);
+        color: var(--blanco);
+        padding: 1rem 4rem;
+        margin-top: 3rem;
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: .5rem;
+        width: 86%;
+        text-align: center;
+        border: none;
+        box-shadow: 5px 5px 10px #262626;
+    }
+} 
+
+@media(max-width:200px){
+    .boton {
+        background-color: var(--secundario);
+        color: var(--blanco);
+        padding: auto auto;
+        margin-top: 3rem;
+        margin-left: 1rem;
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: .5rem;
+        width: 70%;
+        text-align: center;
+        border: none;
+        box-shadow: 5px 5px 10px #262626;
+    }
+}
+
+
+/*
+@media(min-width:200px){
+    .boton {
+        background-color: var(--secundario);
+        color: var(--blanco);
+        padding: auto auto;
+        margin-top: 3rem;
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: .5rem;
+        width: 70%;
+        text-align: center;
+        border: none;
+        box-shadow: 5px 5px 10px #262626;
+    }
+}
+
+@media(min-width:200px){
+    .boton {
+        background-color: var(--secundario);
+        color: var(--blanco);
+        padding: auto auto;
+        margin-top: 3rem;
+        font-size: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        border-radius: .5rem;
+        width: 70%;
+        text-align: center;
+        border: none;
+        box-shadow: 5px 5px 10px #262626;
+    }
+}*/
+
 @media(max-width:1024px){
     .tarifario img{
         box-sizing:border-box;
@@ -869,6 +969,23 @@ div.tit-form{
         height: 100%;
         justify-items: center;
         content: url(img/smallpics/tarifariosmall.jpg);
+    }
+}
+
+@media(max-width:1024px){
+    .showcase p#texto {
+        font-size: 20px;
+        color: white;
+        background-color: var(--secundario);
+        width: 70%;
+        margin: auto;
+        border-radius: 25px;
+        box-shadow: 0px 0px 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        cursor:pointer;    
     }
 }
 
