@@ -25,6 +25,7 @@
     font-size:30px;
     z-index:100;
     transition: transform .2s ease-in-out;
+    box-shadow: 5px 5px 10px #262626;
 }
 
 .whatsapp-icon {
@@ -321,9 +322,10 @@ ul.slider li:target{
 
 /*BOTONES SLIDE COBERTURA*/
 .btn li a{
-    margin: 10px 80px;
+    margin: 10px 50px;
     text-decoration: none;
     display: block;
+    color: #262626;
     border: 1px solid gray;
     width: 200px;
     height: 50px;
@@ -333,11 +335,15 @@ ul.slider li:target{
     font-size: 25px;
     box-shadow: 5px 5px 10px;
     transition: transform .5s ease-in-out;
+    border-radius: 10px;
 }
 
 .btn li a:hover{
-    
+    box-shadow: 5px 5px 10px #262626;
     transform: scale(1.2);
+    background-color: var(--secundario);
+    color: #ffffff;
+    
 }
 
 .btn{
@@ -345,7 +351,7 @@ ul.slider li:target{
     grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
     margin: 10px 0px;
-    justify-content:space-around;
+    justify-content:center
 }
 
 .servicios li{
@@ -686,16 +692,45 @@ div.tit-form{
         grid-template-columns: repeat(1, 1fr);
     }
 }
+/*BOTONES COBERTURA*/
+
+/*LAPTOP*/
+@media (max-width:1280px){
+    .btn{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0px;
+        margin: 5px 0px;
+        padding-left:45px;     
+        justify-content:space-evenly;
+        
+    }
+}
 
 
-@media(max-width:700px){
+/*IPAD HORIZONTAL*/
+@media (max-width:1024px){
+    .btn{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0px;
+        margin: 5px 0px;
+        padding-left:20px;     
+        justify-content:space-evenly;
+        
+    }
+}
+
+/*IPAD VERTICAL*/
+@media(max-width:768px){
     .btn{
         display:grid;
         grid-template-columns: 1fr;
         gap: 25px;
         margin: 10px 0px;
-        padding-left: 57px;
+        padding-left: 80px;
         justify-content:space-evenly;
+        margin-left: 170px;
     }
 }
 
@@ -937,7 +972,95 @@ div.tit-form{
         box-shadow: 5px 5px 10px #262626;
     }
 }*/
+/*COBERTURA SLIDE*/
 
+/* IPAD HORIZONTAL*/
+/*METROPOLITANA*/
+@media(max-width:1024px){
+    .container2 #slide1{
+        box-sizing:border-box;
+        display:grid;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width:800px;
+        height:700px;
+        justify-items: center;
+        content: url(img/cobertura/Metropolitana.png);
+    }
+}
+/*VALPARAISO*/
+@media(max-width:1024px){
+    .container2 #slide2{
+        box-sizing:border-box;
+        display:grid;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width:800px;
+        height:700px;
+        justify-items: center;
+        content: url(img/cobertura/Valaparaiso.png);
+    }
+}
+/*BIOBIO*/
+@media(max-width:1024px){
+    .container2 #slide3{
+        box-sizing:border-box;
+        display:grid;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width:800px;
+        height:700px;
+        justify-items: center;
+        content: url(img/cobertura/Biobio.png);
+    }
+}
+
+ /*IPAD VERTICAL*/
+/*METROPOLITANA*/
+@media(max-width:768px){
+    .container2 #slide1{
+        box-sizing:border-box;
+        display:grid;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width:800px;
+        height:700px;
+        justify-items: center;
+        content: url(img/smallpics/Metropolitana768x1024.jpg);
+    }
+}
+/*VALPARAISO*/
+@media(max-width:768px){
+    .container2 #slide2{
+        box-sizing:border-box;
+        display:grid;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width:800px;
+        height:700px;
+        justify-items: center;
+        content: url(img/smallpics/Valparaiso768x1024.jpg);
+    }
+}
+/*BIOBIO*/
+@media(max-width:768px){
+    .container2 #slide3{
+        box-sizing:border-box;
+        display:grid;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width:800px;
+        height:700px;
+        justify-items: center;
+        content: url(img/smallpics/Biobio768x1024.jpg);
+    }
+}
+
+
+
+
+
+/*TARIFARIO*/
 @media(max-width:1024px){
     .tarifario img{
         box-sizing:border-box;
@@ -962,6 +1085,17 @@ div.tit-form{
 }
 
 @media(max-width:480px){
+    .tarifario img{
+        box-sizing:border-box;
+        display:block;
+        width: 100%;
+        height: 100%;
+        justify-items: center;
+        content: url(img/smallpics/tarifariosmall.jpg);
+    }
+}
+
+@media(max-width:200px){
     .tarifario img{
         box-sizing:border-box;
         display:block;
